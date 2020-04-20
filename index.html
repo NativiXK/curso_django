@@ -1,75 +1,85 @@
 <!DOCTYPE html>
 <html> <!-- elemento raiz de um página html -->
-<head> <!-- contem informações sobre o documento -->
-  <title> Título </title> <!-- título da pagina aberta -->
-  <meta charset="utf-8" /> <!-- tipo de caracteres a ser interpretado -->
-</head>
+  <head> <!-- contem informações sobre o documento -->
+    <title> Título </title> <!-- título da pagina aberta -->
+    <meta charset="utf-8" /> <!-- tipo de caracteres a ser interpretado -->
+  </head>
 
-<body> <!-- Contem todos os códigos do documento -->
-  <ol type="A"> <!-- Listas ordenadas -->
-    <li> HTML </li>
-    <li> CSS </li>
-    <li> Python </li>
-  </ol>
-  <!--
-  Atributos para listas ordenadas
-  type="1" - lista por números;
-  type="A" - lista por letras maiúsculas;
-  type="a" - lista por letras minúsculas;
-  type="I" - lista por números romanos maiúsculos;
-  type="i" - lista por números romanos minúsculos.
-  -->
+  <body> <!-- Contem todos os códigos do documento -->
+    <a href="index.html"> Home </a> <!-- Tag para link -->
+    <br/>
+    <a href="contato.html"> Contato </a> <!-- Parametro href é o link -->
+    <br/>
+    <a href="sobre.html"> Sobre </a>
+    <br/>
+    <!-- Propriedade target permite escolher como abrir o link -->
+    <a href="https://google.com" target="_blank"> Abrir Google </a>
+    <a href="sobre.html" download> Download</a>
 
-  <ul> <!-- Listas não ordenadas -->
-    <li> HTML </li>
-    <li> CSS </li>
-    <li> Python </li>
-  </ul>
+    <!-- Criando ancoras -->
+    <h1>Lorem luctus consectetur</h1> <br>
+    <a href="#title1">Lorem ipsum</a>
+    <a href="#title2">Ut fermentum luctus </a>
+    <a href="#title3">In in lorem erat. </a>
+    <a href="#title4">Nullam tellus </a>
+    <!-- Os titulos possuem ID de referencia, ao clicar no link o browser
+    leva até onde o titulo está-->
+    <h2 id="title1">Lorem ipsum</h2>
+    <p>
+      Dolor sit amet, consectetur adipiscing elit. Aliquam mattis
+      neque eget ultricies mattis. Cras sed nibh justo. Curabitur
+      auctor congue tortor sit amet rutrum. Etiam porta, urna egestas
+      sagittis vulputate, massa urna porttitor lectus, vitae varius quam
+      nisl ut massa. Mauris eget hendrerit nibh. Sed tortor velit, elementum
+      eu elit vel, consectetur dapibus quam. Sed eu rutrum dolor. Aliquam vel
+      magna at risus lacinia scelerisque vitae vitae augue. Nunc fringilla
+      posuere turpis, vel semper elit iaculis eget. Integer pretium est sit
+      amet ex tempus, in blandit lectus dictum. Nullam non risus sagittis, auctor
+      dolor vitae, suscipit ex. Curabitur fringilla vestibulum nunc non iaculis.
+    </p>
+    <p>
+      Vivamus ac pellentesque metus, eget hendrerit sem. Aenean in sollicitudin lacus, consequat
+      porttitor ante. Aliquam tempus, leo a efficitur mattis, augue eros vestibulum turpis, at
+      pellentesque nunc arcu ac diam. Nulla facilisis arcu eu ex sollicitudin faucibus in ac velit.
+      Mauris in elit scelerisque mi volutpat dignissim nec et nibh. Sed quis nunc eget est imperdiet
+      malesuada eget id elit. Nunc ac lectus luctus, faucibus quam in, finibus nulla. Praesent nunc
+      nibh, dictum in turpis non, cursus vestibulum arcu. Suspendisse vel elit in dui vestibulum
+      laoreet. Duis ullamcorper, mi ac interdum tempus, neque dolor efficitur quam, vitae mollis
+      mi lorem non risus. Nulla sed nulla sem. Nunc ullamcorper nisi in metus porttitor, ut porttitor
+      est sodales.
+    </p>
+    <h2 id="title2">Ut fermentum luctus</h2>
+    <p>
+      Enim non hendrerit. Aliquam justo nulla, ultricies sed pretium non,
+      tempor at erat. Proin maximus aliquet condimentum. Pellentesque magna tellus,
+      tincidunt in auctor in, vehicula at ante. Proin et neque id mi elementum elementum
+      ac non libero. Ut euismod maximus neque placerat iaculis. Sed orci quam, luctus vel
+      felis ac, sollicitudin maximus purus. Mauris facilisis accumsan lorem in bibendum.
+      Nullam sagittis porttitor massa auctor efficitur. Curabitur in imperdiet risus, quis
+      tincidunt lacus. Sed iaculis sodales nibh, et mattis sapien rhoncus sed. Nunc quam est,
+      congue ut magna sit amet, egestas molestie libero.
+    </p
+    <h2 id="title3">In in lorem erat.</h2>
+    <p>
+      Vivamus ac pellentesque metus, eget hendrerit sem. Aenean in sollicitudin lacus, consequat
+      porttitor ante. Aliquam tempus, leo a efficitur mattis, augue eros vestibulum turpis, at
+      pellentesque nunc arcu ac diam. Nulla facilisis arcu eu ex sollicitudin faucibus in ac velit.
+      Mauris in elit scelerisque mi volutpat dignissim nec et nibh. Sed quis nunc eget est imperdiet
+      malesuada eget id elit. Nunc ac lectus luctus, faucibus quam in, finibus nulla. Praesent nunc
+      nibh, dictum in turpis non, cursus vestibulum arcu. Suspendisse vel elit in dui vestibulum
+      laoreet. Duis ullamcorper, mi ac interdum tempus, neque dolor efficitur quam, vitae mollis
+      mi lorem non risus. Nulla sed nulla sem. Nunc ullamcorper nisi in metus porttitor, ut porttitor
+      est sodales.
+    </p>
 
-  <dl> <!-- Listas de descrição -->
-    <dt> HTML </dt> <!-- Termo mostrado -->
-    <dd> Hyper Text Markup Language </dd> <!-- Descrição do item -->
-    <dt> CSS </dt>
-    <dd> Cascading Style Sheet </dd>
-  </dl>
-
-<progress value="50" max="100"> </progress> <!-- Barra de progresso -->
-<meter value="60" max="100" min="0"> </meter> <!--  Similar a barra de progresso -->
-
-<br/>
-<hr />
-
-<table> <!-- Tag para criar tabela -->
-  <thead> <!-- Separação de cabeçalho -->
-    <tr> <!-- Linha na tabela -->
-      <th> Nome </th> <!-- Titulo da coluna 1-->
-      <th> Sobrenome </th> <!-- Titulo da coluna 3-->
-      <th> Idade </th> <!-- Titulo da coluna 3-->
-    </tr>
-  </thead>
-
-  <tbody> <!-- Separação do corpo da tabela -->
-    <tr> <!-- Linha 1 -->
-      <td> Mateus </td> <!-- Conteúdo da linha na coluna 1 -->
-      <td> Konkol </td> <!-- Conteúdo da linha na coluna 2 -->
-      <td> 22 </td> <!-- Conteúdo da linha na coluna 3 -->
-    </tr>
-    <tr> <!-- Linha 2 -->
-      <td> Lavínia </td> <!-- Conteúdo da linha na coluna 1 -->
-      <td> Rafaela de Marco </td> <!-- Conteúdo da linha na coluna 2 -->
-      <td> 21 </td> <!-- Conteúdo da linha na coluna 3 -->
-    </tr>
-    <tr> <!-- Linha 2 -->
-      <!-- rowspan mescla com duas linha, colspan mescla com duas colunas -->
-      <td colspan="2" rowspan="2"> Marco </td> <!-- Conteúdo da linha na coluna 1 -->
-      <!-- td> Silva </td --> <!-- Conteúdo da linha na coluna 2 -->
-      <td> 25 </td> <!-- Conteúdo da linha na coluna 3 -->
-    </tr>
-
-  </tbody>
-
-</table>
-
-
-</body>
+    <h2 id="title4">Nullam tellus</h2>
+    <p>
+      Magna, pulvinar vitae convallis eu, vestibulum sit amet nisl. Integer accumsan quam sed
+      lectus ornare, gravida molestie orci tincidunt. Sed facilisis odio molestie aliquet varius.
+      Aenean imperdiet ligula in dui auctor, nec iaculis quam laoreet. In convallis tincidunt ipsum
+      in pellentesque. Aenean et interdum lectus. Mauris vel auctor enim. In vitae blandit orci. Etiam
+      vulputate magna ut nibh placerat luctus. Cras sapien lacus, congue et tortor at, gravida vestibulum
+      mi. Morbi pretium posuere ligula, id iaculis justo rhoncus at.
+    </p>
+  </body>
 </html>
