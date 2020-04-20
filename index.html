@@ -6,22 +6,70 @@
 </head>
 
 <body> <!-- Contem todos os códigos do documento -->
-  <b> Olá </b> <!-- Negrito ou tag <strong> -->
-  <i> mundo </i> <!-- Itálico -->
-  <ins> inserido </ins> <!-- Sublinhado -->
-  <del> riscado </del> <!-- Riscado -->
-  <small> pequeno </small> <!-- Pequeno -->
-  <sup> Acima </sup> <!-- Acima do texto comum -->
-  <sub> Abaixo </sub> <!-- Abaixo do texto comum -->
-  <q> Citação </q> <!-- Citação -->
-  <p> Parágrafo </p> <!-- Parágrafo -->
-  <br /> <!-- Quebra de linha -->
-  <span> Sem efeito </span> <!-- Utilizado com CSS -->
-  <h1> Titulo 1 </h1> <!-- Titulo 1  vai até H6-->
-  <hr /> <!-- Linha horizontal -->
-  <bdo dir="rtl"> Texto invertido </bdo> <!-- define sentido de renderização -->
-  <ruby>
-  水 <rt> água </rt>
-  </ruby>
+  <ol type="A"> <!-- Listas ordenadas -->
+    <li> HTML </li>
+    <li> CSS </li>
+    <li> Python </li>
+  </ol>
+  <!--
+  Atributos para listas ordenadas
+  type="1" - lista por números;
+  type="A" - lista por letras maiúsculas;
+  type="a" - lista por letras minúsculas;
+  type="I" - lista por números romanos maiúsculos;
+  type="i" - lista por números romanos minúsculos.
+  -->
+
+  <ul> <!-- Listas não ordenadas -->
+    <li> HTML </li>
+    <li> CSS </li>
+    <li> Python </li>
+  </ul>
+
+  <dl> <!-- Listas de descrição -->
+    <dt> HTML </dt> <!-- Termo mostrado -->
+    <dd> Hyper Text Markup Language </dd> <!-- Descrição do item -->
+    <dt> CSS </dt>
+    <dd> Cascading Style Sheet </dd>
+  </dl>
+
+<progress value="50" max="100"> </progress> <!-- Barra de progresso -->
+<meter value="60" max="100" min="0"> </meter> <!--  Similar a barra de progresso -->
+
+<br/>
+<hr />
+
+<table> <!-- Tag para criar tabela -->
+  <thead> <!-- Separação de cabeçalho -->
+    <tr> <!-- Linha na tabela -->
+      <th> Nome </th> <!-- Titulo da coluna 1-->
+      <th> Sobrenome </th> <!-- Titulo da coluna 3-->
+      <th> Idade </th> <!-- Titulo da coluna 3-->
+    </tr>
+  </thead>
+
+  <tbody> <!-- Separação do corpo da tabela -->
+    <tr> <!-- Linha 1 -->
+      <td> Mateus </td> <!-- Conteúdo da linha na coluna 1 -->
+      <td> Konkol </td> <!-- Conteúdo da linha na coluna 2 -->
+      <td> 22 </td> <!-- Conteúdo da linha na coluna 3 -->
+    </tr>
+    <tr> <!-- Linha 2 -->
+      <td> Lavínia </td> <!-- Conteúdo da linha na coluna 1 -->
+      <td> Rafaela de Marco </td> <!-- Conteúdo da linha na coluna 2 -->
+      <td> 21 </td> <!-- Conteúdo da linha na coluna 3 -->
+    </tr>
+    <tr> <!-- Linha 2 -->
+      <!-- rowspan mescla com duas linha, colspan mescla com duas colunas -->
+      <td colspan="2" rowspan="2"> Marco </td> <!-- Conteúdo da linha na coluna 1 -->
+      <!-- td> Silva </td --> <!-- Conteúdo da linha na coluna 2 -->
+      <td> 25 </td> <!-- Conteúdo da linha na coluna 3 -->
+    </tr>
+
+  </tbody>
+
+</table>
+
+
 </body>
 </html>
