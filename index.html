@@ -6,89 +6,25 @@
   </head>
 
   <body> <!-- Contem todos os códigos do documento -->
-    <!--  - accept-charset diz qual tipo de caracteres do form
-          - autocomplete permite o browser sugerir palavras
-          - action especifica para onde será enviado o formulário
-          - method especifica qual método HTTP será usado GET ou POST
-          - enctype quando o form precisa ser criptografado para enviar para o
-            servidor, funciona apenas com metodo POST.
-          - novalidate, impede a validação dos dados antes de enviar
-          - target, indica onde a página destino será aberta
-          </ol>-->
-    <form accept-charset="utf-8" autocomplete="on" oninput="x.value=parseInt(a.value)+parseInt(b.value)"> <!-- Cria um formulário -->
-      <!--  - placeholder - texto que aparece quando o campo está vazio;
-            - maxlength - quantidade máxima de caracteres;
-            - required - indica que o campo é necessário, não permitindo submeter
-             o formulário se o campo estiver em branco;
-            - disabled - deixa o campo desabilitado;
-            - readonly - impede edições no campo, permitindo apenas que o
-              usuário leia o valor.-->
-      <input type="text" name="Nome" placeholder="Nome"/> <!-- Elemento de entrada de dados -->
-      <br/>
-      <input type="email" name="Email" placeholder="Email">
-      <br/>
-      <input type="search" name="search" placeholder="Pesquisar">
-      <br/>
-      <input type="url" name="url" placeholder="url">
-      <br/>
-      <input type="number" name="numero" placeholder="999">
-      <br/>
-      <input type="radio" name="sexo" checked="checked"/> Homem
-      <input type="radio" name="sexo" /> Mulher
-      <h2> Escolha quantas cores quiser </h2>
-      <input type="checkbox" name="cor1" /> Azul
-      <input type="checkbox" name="cor2" /> Amarelo
-      <input type="checkbox" name="cor3" /> Vermelho
-      <h2> Datas </h2>
-      <input type="date" name="pagamento"/>
-      <br/>
-      <input type="time" name="despertador"/>
-      <br/>
-      <input type="datetime-local" name="horalocal" />
-      <br/>
-      <input type="month" name="casamento"/>
-      <br/>
-      <input type="week" name="semana" />
-      <br/>
-      <input type="range" name="porcentvalor" value="50" min="0" max="100"/>
-      <br/>
-      <input type="color" name="corcalca" />
-      <br/>
-      <input type="file" />
-      <br/>
-      <input type="submit" name="guardar" value="Enviar"/> <!-- Enviar o formulario -->
-      <input type="reset" value="Limpar"/>
-      <input type="button" name="nada" value="botão">
-      <br/>
-      <select> <!-- cria dropdown list para escolha -->
-        <option value="html"> HTML </option>
-        <option value="css"> CSS </option>
-        <option value="python"> Python </option>
-      </select>
+    <!-- Tag img exibe uma imagem -->
+    <img src="Download.jpg" alt="Avatar homem" width="100" height="100">
+    <figure>
+      <!-- Ajuda a melhorar a semantica de imagem e legenda -->
+      <img src="Download.jpg" alt="Avatar homem" width="100" height="100">
+      <figcaption>Figura 1 - Avatar de homem</figcaption>
+    </figure>
 
-      <input list="browsers" name="browser" />
-        <datalist id="browsers">
-          <option value="Google Chrome"></option>
-          <option value="Internet explorer"></option>
-          <option value="Mozilla"></option>
-          <option value="Opera"></option>
-          <option value="Safari"></option>
-        </datalist>
+    <!-- Controle de audio no browser -->
+    <audio controls autoplay>
+      <source src="audio/Alarm02.wav" type="audio/wav">
+      <source src="audio/Alarm01.wav" type="audio/wav">
+        Your browser does not support the audio tag.
+    </audio>
 
-        <fieldset> <!-- cria um campo para melhor separar as informações -->
-          <legend>Cadastro</legend>
-          nome : <input type="text"/><br/>
-          Email : <input type="email"/><br/>
-        </fieldset>
-        <!-- Cria label que ao clicar nele dá foco no input id email -->
-        <label for="email">Email</label>
-        <input type="text" id="email"/>
-        <br/>
-        0 <input type="range" id="a" value="50"/> 100
-        +
-        <input type="number" id="b" value="50"/> = 
-        <output name="x" for="a b"></output>
+    <!-- Controle de video no browser -->
+    <video controls width="360" height="275" poster="Download.jpg" autoplay >
+      <source src="video/SpeechOGrandeDitador.mp4" type="video/mp4">
+    </video>
 
-    </form>
   </body>
 </html>
