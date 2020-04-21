@@ -1,3 +1,8 @@
+<!-- O que é semântica
+Boa prática de estruturação da página, com as tags padrões para separações.
+Ajudam os motores de busca a entenderm o código do site e a indexar a página
+-->
+
 <!DOCTYPE html>
 <html> <!-- elemento raiz de um página html -->
   <head> <!-- contem informações sobre o documento -->
@@ -6,25 +11,42 @@
   </head>
 
   <body> <!-- Contem todos os códigos do documento -->
-    <!-- Tag img exibe uma imagem -->
-    <img src="Download.jpg" alt="Avatar homem" width="100" height="100">
-    <figure>
-      <!-- Ajuda a melhorar a semantica de imagem e legenda -->
-      <img src="Download.jpg" alt="Avatar homem" width="100" height="100">
-      <figcaption>Figura 1 - Avatar de homem</figcaption>
-    </figure>
+    <!-- divisão de um site com o novo HTML 5 -->
+    <header class="cabecalho">
+      <nav class="menu-navegacao">
+        <button type="button" name="button">Eletrônica</button>
+        <button type="button" name="button">Sobre</button>
+        <button type="button" name="button">Contato</button>
+      </nav>
+    </header>
+    <aside class="conteudo-secundario">
+      <!-- Janela modal que flutua sobre o conteudo -->
+      <dialog open> Minha modal </dialog>
+      <address>
+        Rua Henrique Ziebel, N°45, Rio Hern - Schroeder - SC - 89275-000
+      </address>
+    </aside>
+    <main class="conteudo-principal">
 
-    <!-- Controle de audio no browser -->
-    <audio controls autoplay>
-      <source src="audio/Alarm02.wav" type="audio/wav">
-      <source src="audio/Alarm01.wav" type="audio/wav">
-        Your browser does not support the audio tag.
-    </audio>
-
-    <!-- Controle de video no browser -->
-    <video controls width="360" height="275" poster="Download.jpg" autoplay >
-      <source src="video/SpeechOGrandeDitador.mp4" type="video/mp4">
-    </video>
-
+      <article class="post">
+        <p>
+          <!-- Tag abbr para abreviações, ajuda tradutores a entender siglas -->
+          A <abbr title="União Nacional dos Estudantes">UNE</abbr> anunciou
+          ontem <time datetime="2020-04-20 21:00">20 de abril de 2020 às 9 horas da noite </time> que ...
+          <dfn>HTML</dfn> significa HyperText Markup Language, e é utilizado
+          para a estruturação de páginas WEB
+        </p>
+      </article>
+    </main>
+    <footer class="rodape">
+      <details> <!-- Cria um lista encolhida que expande ao clicar -->
+        <summary> Lista de cursos </summary>
+        <ul>
+          <li>HTML5 e CSS3</li>
+          <li>Python</li>
+          <li>Django</li>
+        </ul>
+      </details>
+    </footer>
   </body>
 </html>
