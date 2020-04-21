@@ -1,0 +1,13 @@
+nav{
+  background-color: lightblue;
+  height: 100px;
+}
+body {
+  background-color: lightblue;
+}
+button {
+  background-color: white;
+  border-style: hidden;
+  position: relative;
+  top: 50 px;
+}
