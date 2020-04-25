@@ -3,13 +3,11 @@ nav{
   height: 20%;
 }
 main {
-<<<<<<< HEAD
+  display: block;
   position: relative;
   left: 30%;
   top: 10%;
   width: calc(100% - 30%);
-=======
->>>>>>> eee0d3d9c9b527ba38198959d72cc43b5bfaa493
   height: 40%;
   background-color: RGBA(255, 0, 0, 0.2);
 }
@@ -50,23 +48,31 @@ p {
   font-stretch: condensed;
 }
 
-<<<<<<< HEAD
+input{
+  outline-color: blue;
+  outline-style: dashed;
+
+}
+
 aside{
+  display: inline;
+  background-color: red;
+  overflow: scroll;
   position: relative;
   left: 0px;
   border: 1px;
   border-radius: 5px;
-  width: 30%;
+  width: 50px;
   height: 100%;
+  box-sizing: border-box;
 }
 
-address {
-  bottom: 10%;
-
+address{
+  width: 100px;
+  overflow: auto;
+  box-sizing: border-box;
 }
 
-=======
->>>>>>> eee0d3d9c9b527ba38198959d72cc43b5bfaa493
 @font-face {
   font-family: MinhaFonte;
   src: url("amaze/AMAZR___.ttf");
