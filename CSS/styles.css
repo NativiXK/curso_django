@@ -3,13 +3,12 @@ nav{
   height: 20%;
 }
 main {
-  display: block;
-  position: relative;
+  position: absolute;
   left: 30%;
   top: 10%;
-  width: calc(100% - 30%);
-  height: 40%;
+  width: calc(100% - 60%);
   background-color: RGBA(255, 0, 0, 0.2);
+  clear: both;
 }
 button {
   background-color: white;
@@ -49,28 +48,88 @@ p {
 }
 
 input{
+  position: absolute;
+  left: calc((100% - 30%) / 2);
+  bottom: 10%;
+  width: 30%;
   outline-color: blue;
   outline-style: dashed;
-
+  background-color: lightblue;
+  z-index: 10;
 }
+/* z-index só funciona com objetos que tenham a propriedade position
+declarada relative, absolute e fixed */
 
 aside{
-  display: inline;
+  display: inline-inline-block;
   background-color: red;
   overflow: scroll;
   position: relative;
   left: 0px;
-  border: 1px;
+  border: 1px solid black;
   border-radius: 5px;
   width: 50px;
   height: 100%;
   box-sizing: border-box;
+}
+/* não pode ser usada propriedades opostas como top e bottom*/
+
+article{
+  display: block;
+  position: absolute;
+  left: calc((100% - 75%));
+  background-color: #12FF56;
+  width: 75%;
+  z-index: 0;
+}
+
+img{
+  height: 35%;
+  width: 35%;
+  float: left;
+}
+
+/* a propriedade float só pode ser usada com objetos que não tenham
+a position declarada como absolute*/
+footer{
+  position: absolute;
+  bottom: 0%;
+  height: 10%;
+  width: 100%;
+  background-color: lightgreen;
 }
 
 address{
   width: 100px;
   overflow: auto;
   box-sizing: border-box;
+}
+
+ul{
+  /*list-style: inside url("../imagens/right-arrow.png");*/
+  list-style: inside circle;
+}
+
+table{
+  border-collapse: separate;
+  border-spacing: 10px 20px;
+  z-index: 5;
+  clear: both;
+}
+
+caption{
+  caption-side: bottom;
+}
+
+table, th, td, tr {
+  border: 1px solid black;
+  empty-cells: hide;
+}
+
+thead{
+  background-color: blue;
+  color: red;
+
 }
 
 @font-face {
