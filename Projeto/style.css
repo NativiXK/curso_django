@@ -1,0 +1,68 @@
+html, body{
+  height: 100%;
+  margin: 0px;
+  background-color: #161616;
+  color: white;
+}
+
+#Lugar{
+  margin: 0px;
+  display: block;
+  background-image: url("./images/bar_interior.jpg");
+}
+
+.titulo-secao{
+  text-align: center;
+  font-size: 30px;
+}
+
+.secao{
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 500px;
+}
+
+/* HEADER */
+.cabecalho{
+  position: relative;
+}
+
+.video-header{
+  width: 100%;
+}
+
+.logo-header{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /*desloca origem da imagem*/
+  max-width: 90%;
+}
+
+.navegacao{
+  position:absolute;
+  display: inline-block;
+  top:0px;
+  left: 0px;
+  width: 100%;
+  height: 50px;
+  margin: 0px;
+  background-color: #3b3b3b;
+  z-index: 100;
+  border: 0px;
+}
+
+.nav-link{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+}
+
+.nav-link:hover{
+  color: #0079d0;
+  background: white;
+}
