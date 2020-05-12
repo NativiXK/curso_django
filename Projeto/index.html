@@ -2,38 +2,62 @@
 <html lang="pt" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Trem na Web</title>
+    <title>Trem na WEB</title>
+    <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
-    <header id="Home" class="cabecalho">
-      <video class="video-header" src="videos/copo_cerveja.mp4" loop muted autoplay></video>
-      <img class="logo-header" src="images/logo.png" alt="">
-      <nav class="navegacao">
-        <a class="nav-link" id="nav-home" href="#Home">Home</a>
-        <a class="nav-link" id="nav-lugar" href="#Lugar">O lugar</a>
-        <a class="nav-link" id="nav-drinks" href="#Drinks">Nossos drinks</a>
-        <a class="nav-link" href="#Edereco">Endereço</a>
+    <header class="header-principal">
+      <video class="video-cabecalho" src="./videos/copo_cerveja.mp4" autoplay muted loop></video>
+      <img class="imagem-cabecalho" src="./images/logo.png" alt="logo trem na web">
+      <nav class="navegacao-cabecalho">
+        <ul class="lista-navegacao-cabecalho">
+          <li class="item-lista-navegacao-cabecalho">
+            <a class="nav-item-ancora" href="#">Home</a>
+          </li>
+          <li class="item-lista-navegacao-cabecalho">
+            <a class="nav-item-ancora" href="#lugar">O lugar</a>
+          </li>
+          <li class="item-lista-navegacao-cabecalho">
+            <a class="nav-item-ancora" href="#">Nossos drinks</a>
+          </li>
+          <li class="item-lista-navegacao-cabecalho">
+            <a class="nav-item-ancora" href="#">Endereço</a>
+          </li>
+        </ul>
       </nav>
+
     </header>
 
-    <main class="corpo">
-      <div class="secao" id="Lugar" class="descricao">
-        <h2 class="titulo-secao">O lugar</h2>
+    <section class="lugar fundo-secao">
+      <div class="container-secao">
+        <h1 id="lugar" class="titulo-secao" >O lugar</h1>
+        <p class="texto-secao">
+          O nosso pub fica em um antigo trem que atravessava toda a europa,
+          e agora foi trazido para o Brasil.
+        </p>
+        <p class="texto-secao">
+          Cada vagão possui um estilo próprio. São 5 ambientes diferentes
+          distribuídos em 10 vagões, oferecendo diversos tipos de músicas e
+          ambientes.
+        </p>
       </div>
+    </section>
 
-      <div class="secao" id="Drinks" class="descricao">
-        <p>Olá amigo</p>
+    <section class="drinks fundo-secao">
+      <div class="container-secao">
+        <h1 id="drinks" class="titulo-secao" >Nossos drinks</h1>
+        <img class="imagem-drink" src="./images/cocktails.jpg">
+        <p class="texto-secao">
+          O nosso pub fica em um antigo trem que atravessava toda a europa,
+          e agora foi trazido para o Brasil.
+        </p>
+        <p class="texto-secao">
+          Cada vagão possui um estilo próprio. São 5 ambientes diferentes
+          distribuídos em 10 vagões, oferecendo diversos tipos de músicas e
+          ambientes.
+        </p>
       </div>
+    </section>
 
-    </main>
-    <footer class="rodape">
-      <div class="endereco">
-
-      </div>
-      <div class="contato">
-
-      </div>
-    </footer>
   </body>
 </html>

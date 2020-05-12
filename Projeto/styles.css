@@ -1,0 +1,110 @@
+/*    GERAL
+*****************/
+html, body{
+  height: 100%;
+  margin: 0;
+  background-color: #161616;
+  color: white;
+  font-family: helvetica, Arial, sans-serif;
+}
+
+.fundo-secao{
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 500px;
+}
+
+.container-secao{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.titulo-secao{
+  text-align: center;
+  font-size: 30px;
+}
+
+.texto-secao{
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  margin: 0;
+  font-size: 18px;
+}
+
+/*    HEADER
+*****************/
+.header-principal{
+  position: relative;
+}
+
+.navegacao-cabecalho{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #3b3b3b;
+  z-index: 100;
+}
+
+.lista-navegacao-cabecalho{
+  padding: 0;
+}
+
+.item-lista-navegacao-cabecalho{
+  display: inline-block;
+  padding: 15px;
+  margin: 0;
+}
+
+.nav-item-ancora{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0;
+}
+
+.nav-item-ancora:hover{
+  color: #4d4dff;
+}
+
+.video-cabecalho{
+  width: 100%;
+}
+
+.imagem-cabecalho{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+}
+
+
+/*    o LUGAR
+*****************/
+.lugar{
+  background-image: url('./images/bar_interior.jpg');
+}
+
+/*    DRINKS
+*****************/
+.drinks{
+  background-image: url('./images/drinks_background.jpg');
+}
+
+.imagem-drink{
+  max-width: 30%;
+  margin-top: -30px;
+}
+
+
+
+
+/*    RODAPE
+*****************/
